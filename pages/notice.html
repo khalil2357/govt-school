@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>নোটিশ বোর্ড | বাংলাদেশ সরকারি উচ্চ বিদ্যালয়</title>
+  <link rel="stylesheet" href="../asset/css/style.css">
+  <link rel="stylesheet" href="../asset/css/home.css">
+</head>
+<body>
+<div id="site-header"></div>
+
+<!-- PAGE HERO -->
+<div style="background:linear-gradient(135deg,var(--red) 0%,#8b0019 100%);padding:40px 0 60px;position:relative;overflow:hidden;">
+  <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--green) 50%,var(--red) 50%);"></div>
+  <div class="container">
+    <div class="section-tag" style="background:rgba(255,255,255,0.15);color:#fff;margin-bottom:10px;">📋 বিজ্ঞপ্তি</div>
+    <h1 style="font-size:clamp(24px,4vw,38px);font-weight:800;color:#fff;font-family:'Noto Serif Bengali',sans-serif;margin-bottom:8px;">নোটিশ <span style="color:#ffcdd2;">বোর্ড</span></h1>
+    <p style="color:rgba(255,255,255,0.8);font-size:14px;">সকল সরকারি নোটিশ, বিজ্ঞপ্তি ও ঘোষণা</p>
+    <div style="font-size:13px;color:rgba(255,255,255,0.5);margin-top:8px;">
+      <a href="../index.html" style="color:rgba(255,255,255,0.6);">হোম</a> › নোটিশ বোর্ড
+    </div>
+  </div>
+</div>
+
+<section class="section" style="margin-top:-30px;">
+  <div class="container">
+    <!-- Filter Bar -->
+    <div style="background:#fff;border-radius:var(--radius-md);padding:20px 24px;box-shadow:var(--shadow-md);margin-bottom:28px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:space-between;">
+      <div style="display:flex;gap:8px;flex-wrap:wrap;">
+        <button class="notice-filter-btn active" data-filter="all" style="padding:8px 16px;border-radius:20px;border:1.5px solid var(--green);background:var(--green);color:#fff;font-size:13px;cursor:pointer;font-family:'Hind Siliguri',sans-serif;font-weight:600;">সব নোটিশ</button>
+        <button class="notice-filter-btn" data-filter="academic" style="padding:8px 16px;border-radius:20px;border:1.5px solid #ccc;background:#fff;color:#444;font-size:13px;cursor:pointer;font-family:'Hind Siliguri',sans-serif;">একাডেমিক</button>
+        <button class="notice-filter-btn" data-filter="exam" style="padding:8px 16px;border-radius:20px;border:1.5px solid #ccc;background:#fff;color:#444;font-size:13px;cursor:pointer;font-family:'Hind Siliguri',sans-serif;">পরীক্ষা</button>
+        <button class="notice-filter-btn" data-filter="admission" style="padding:8px 16px;border-radius:20px;border:1.5px solid #ccc;background:#fff;color:#444;font-size:13px;cursor:pointer;font-family:'Hind Siliguri',sans-serif;">ভর্তি</button>
+        <button class="notice-filter-btn" data-filter="holiday" style="padding:8px 16px;border-radius:20px;border:1.5px solid #ccc;background:#fff;color:#444;font-size:13px;cursor:pointer;font-family:'Hind Siliguri',sans-serif;">ছুটি</button>
+      </div>
+      <input class="form-control" placeholder="🔍 নোটিশ খুঁজুন..." style="max-width:220px;font-size:13px;padding:8px 14px;">
+    </div>
+
+    <!-- Urgent Notice -->
+    <div style="background:var(--red);color:#fff;border-radius:var(--radius-md);padding:18px 24px;margin-bottom:20px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+      <span style="font-size:22px;">🚨</span>
+      <div style="flex:1;">
+        <div style="font-weight:700;font-size:15px;margin-bottom:2px;">জরুরি বিজ্ঞপ্তি: বার্ষিক পরীক্ষার সময়সূচি পরিবর্তন</div>
+        <div style="font-size:13px;opacity:0.85;">পূর্বে নির্ধারিত ১০ নভেম্বরের পরিবর্তে পরীক্ষা ১৫ নভেম্বর থেকে শুরু হবে।</div>
+      </div>
+      <span style="background:rgba(255,255,255,0.2);padding:6px 14px;border-radius:20px;font-size:12px;white-space:nowrap;">০৫ নভেম্বর ২০২৫</span>
+    </div>
+
+    <!-- Notice List -->
+    <div style="display:flex;flex-direction:column;gap:12px;">
+
+      <div class="notice-card urgent" data-category="exam" style="display:flex;">
+        <div class="notice-date" style="background:var(--red);">
+          <div class="notice-date-day">১৫</div>
+          <div class="notice-date-month">নভেম্বর</div>
+        </div>
+        <div class="notice-body">
+          <div class="notice-category exam">পরীক্ষা</div>
+          <div class="notice-title-text">বার্ষিক পরীক্ষা ২০২৫ – চূড়ান্ত সময়সূচি</div>
+          <div class="notice-meta">প্রকাশিত: ০৫ নভেম্বর ২০২৫ | ক্লাস ৬ – ১০ | প্রধান শিক্ষকের কার্যালয়</div>
+        </div>
+        <span class="badge-urgent">জরুরি</span>
+        <span class="notice-pdf-icon">📄</span>
+      </div>
+
+      <div class="notice-card" data-category="admission" style="display:flex;">
+        <div class="notice-date">
+          <div class="notice-date-day">০২</div>
+          <div class="notice-date-month">নভেম্বর</div>
+        </div>
+        <div class="notice-body">
+          <div class="notice-category admission">ভর্তি</div>
+          <div class="notice-title-text">২০২৫-২৬ শিক্ষাবর্ষে ষষ্ঠ শ্রেণিতে ভর্তি বিজ্ঞপ্তি</div>
+          <div class="notice-meta">আবেদনের শেষ তারিখ: ৩০ নভেম্বর ২০২৫ | অনলাইনে আবেদন করুন</div>
+        </div>
+        <span class="notice-pdf-icon">📄</span>
+      </div>
+
+      <div class="notice-card" data-category="academic" style="display:flex;">
+        <div class="notice-date">
+          <div class="notice-date-day">২৮</div>
+          <div class="notice-date-month">অক্টোবর</div>
+        </div>
+        <div class="notice-body">
+          <div class="notice-category academic">একাডেমিক</div>
+          <div class="notice-title-text">বিজ্ঞান মেলা ২০২৫ – অংশগ্রহণের আহ্বান ও নির্দেশিকা</div>
+          <div class="notice-meta">অংশগ্রহণের শেষ তারিখ: ০১ ডিসেম্বর ২০২৫ | সকল শ্রেণি</div>
+        </div>
+        <span class="notice-pdf-icon">📄</span>
+      </div>
+
+      <div class="notice-card" data-category="academic" style="display:flex;">
+        <div class="notice-date">
+          <div class="notice-date-day">২৫</div>
+          <div class="notice-date-month">অক্টোবর</div>
+        </div>
+        <div class="notice-body">
+          <div class="notice-category academic">একাডেমিক</div>
+          <div class="notice-title-text">বার্ষিক ক্রীড়া প্রতিযোগিতা – ২০২৫</div>
+          <div class="notice-meta">তারিখ: ২৫ অক্টোবর ২০২৫ | স্থান: বিদ্যালয় মাঠ</div>
+        </div>
+        <span class="notice-pdf-icon">📄</span>
+      </div>
+
+      <div class="notice-card" data-category="exam" style="display:flex;">
+        <div class="notice-date">
+          <div class="notice-date-day">২০</div>
+          <div class="notice-date-month">অক্টোবর</div>
+        </div>
+        <div class="notice-body">
+          <div class="notice-category exam">পরীক্ষা</div>
+          <div class="notice-title-text">অর্ধ-বার্ষিক পরীক্ষার ফলাফল প্রকাশিত হয়েছে</div>
+          <div class="notice-meta">ফলাফল অনলাইনে ও প্রধান শিক্ষকের কার্যালয় থেকে সংগ্রহ করুন</div>
+        </div>
+        <span class="notice-pdf-icon">📄</span>
+      </div>
+
+      <div class="notice-card" data-category="holiday" style="display:flex;">
+        <div class="notice-date">
+          <div class="notice-date-day">১৫</div>
+          <div class="notice-date-month">অক্টোবর</div>
+        </div>
+        <div class="notice-body">
+          <div class="notice-category holiday" style="color:#e67e00;">ছুটি</div>
+          <div class="notice-title-text">শারদীয় দুর্গাপূজা উপলক্ষে বিদ্যালয় বন্ধ ঘোষণা</div>
+          <div class="notice-meta">ছুটির তারিখ: ১৫–১৮ অক্টোবর ২০২৫ | ১৯ অক্টোবর থেকে পুনরায় চালু</div>
+        </div>
+        <span class="notice-pdf-icon">📄</span>
+      </div>
+
+      <div class="notice-card" data-category="academic" style="display:flex;">
+        <div class="notice-date">
+          <div class="notice-date-day">০৮</div>
+          <div class="notice-date-month">অক্টোবর</div>
+        </div>
+        <div class="notice-body">
+          <div class="notice-category academic">একাডেমিক</div>
+          <div class="notice-title-text">নতুন সিলেবাস ও পাঠ্যক্রম ২০২৫-২৬ প্রকাশ</div>
+          <div class="notice-meta">জাতীয় শিক্ষাক্রম ও পাঠ্যপুস্তক বোর্ড অনুমোদিত</div>
+        </div>
+        <span class="notice-pdf-icon">📄</span>
+      </div>
+
+      <div class="notice-card" data-category="admission" style="display:flex;">
+        <div class="notice-date">
+          <div class="notice-date-day">০১</div>
+          <div class="notice-date-month">অক্টোবর</div>
+        </div>
+        <div class="notice-body">
+          <div class="notice-category admission">ভর্তি</div>
+          <div class="notice-title-text">সপ্তম ও অষ্টম শ্রেণিতে শূন্য আসনে ভর্তির বিজ্ঞপ্তি</div>
+          <div class="notice-meta">আসন সংখ্যা সীমিত | প্রধান শিক্ষকের কার্যালয়ে যোগাযোগ করুন</div>
+        </div>
+        <span class="notice-pdf-icon">📄</span>
+      </div>
+
+    </div>
+
+    <!-- Pagination -->
+    <div style="display:flex;justify-content:center;gap:8px;margin-top:32px;">
+      <button style="width:36px;height:36px;border-radius:6px;border:1.5px solid var(--green);background:var(--green);color:#fff;cursor:pointer;font-family:'Hind Siliguri',sans-serif;font-weight:600;">১</button>
+      <button style="width:36px;height:36px;border-radius:6px;border:1.5px solid #ccc;background:#fff;color:#444;cursor:pointer;font-family:'Hind Siliguri',sans-serif;">২</button>
+      <button style="width:36px;height:36px;border-radius:6px;border:1.5px solid #ccc;background:#fff;color:#444;cursor:pointer;font-family:'Hind Siliguri',sans-serif;">৩</button>
+      <span style="line-height:36px;color:#777;">...</span>
+      <button style="width:36px;height:36px;border-radius:6px;border:1.5px solid #ccc;background:#fff;color:#444;cursor:pointer;font-family:'Hind Siliguri',sans-serif;">১২</button>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+
+<style>
+.notice-filter-btn.active { background: var(--green) !important; color: #fff !important; border-color: var(--green) !important; }
+.header.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.15); }
+</style>
+<script src="../asset/js/layout.js"></script>
+<script src="../asset/js/main.js"></script>
+</body>
+</html>

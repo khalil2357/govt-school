@@ -1,0 +1,6 @@
+/* Additional home page styles */
+@media (max-width: 900px) {
+  .hero-stats { flex-direction: row; flex-wrap: wrap; }
+  .hero-stat { min-width: 120px; }
+  .portal-cards { grid-template-columns: 1fr; }
+}

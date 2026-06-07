@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ফলাফল অনুসন্ধান | বাংলাদেশ সরকারি উচ্চ বিদ্যালয়</title>
+  <link rel="stylesheet" href="../asset/css/style.css">
+  <link rel="stylesheet" href="../asset/css/home.css">
+</head>
+<body>
+<div id="site-header"></div>
+
+<!-- PAGE HERO -->
+<div style="background:linear-gradient(135deg,#006a2e,#002910);padding:40px 0 60px;position:relative;overflow:hidden;">
+  <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--green) 50%,var(--red) 50%);"></div>
+  <div class="container">
+    <div class="section-tag red" style="margin-bottom:10px;">📊 পরীক্ষার ফলাফল</div>
+    <h1 style="font-size:clamp(24px,4vw,38px);font-weight:800;color:#fff;font-family:'Noto Serif Bengali',sans-serif;margin-bottom:8px;">ফলাফল <span style="color:var(--green-light);">অনুসন্ধান</span></h1>
+    <p style="color:rgba(255,255,255,0.7);font-size:14px;">রোল নম্বর দিয়ে আপনার পরীক্ষার ফলাফল দেখুন</p>
+    <div style="font-size:13px;color:rgba(255,255,255,0.5);margin-top:8px;">
+      <a href="../index.html" style="color:rgba(255,255,255,0.5);">হোম</a> › ফলাফল অনুসন্ধান
+    </div>
+  </div>
+</div>
+
+<!-- RESULT SEARCH -->
+<section class="section" style="margin-top:-30px;">
+  <div class="container">
+    <div class="result-search-box">
+      <h2 class="form-title" style="justify-content:center;margin-bottom:28px;">
+        🔍 ফলাফল অনুসন্ধান করুন
+      </h2>
+      <form id="resultForm">
+        <div class="form-row" style="margin-bottom:16px;">
+          <div class="form-group">
+            <label class="form-label">রোল নম্বর <span class="req">*</span></label>
+            <input id="rollInput" class="form-control" placeholder="যেমন: ১০৫৪৭" type="text">
+          </div>
+          <div class="form-group">
+            <label class="form-label">পরীক্ষার ধরন <span class="req">*</span></label>
+            <select id="examInput" class="form-control">
+              <option value="">বেছে নিন</option>
+              <option>বার্ষিক পরীক্ষা</option>
+              <option>অর্ধ-বার্ষিক পরীক্ষা</option>
+              <option>প্রথম সাময়িক পরীক্ষা</option>
+              <option>প্রাক-নির্বাচনি পরীক্ষা</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row" style="margin-bottom:20px;">
+          <div class="form-group">
+            <label class="form-label">শিক্ষাবর্ষ <span class="req">*</span></label>
+            <select id="yearInput" class="form-control">
+              <option value="">বেছে নিন</option>
+              <option>২০২৫</option>
+              <option>২০২৪</option>
+              <option>২০২৩</option>
+              <option>২০২২</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">শ্রেণি</label>
+            <select class="form-control">
+              <option value="">সব শ্রেণি</option>
+              <option>ষষ্ঠ শ্রেণি</option>
+              <option>সপ্তম শ্রেণি</option>
+              <option>অষ্টম শ্রেণি</option>
+              <option>নবম শ্রেণি</option>
+              <option>দশম শ্রেণি</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">🔍 ফলাফল দেখুন</button>
+      </form>
+      <div id="resultOutput"></div>
+    </div>
+
+    <!-- Grading System -->
+    <div style="max-width:700px;margin:40px auto 0;">
+      <h3 style="font-size:18px;font-weight:700;color:var(--black);margin-bottom:16px;text-align:center;">📋 বাংলাদেশ গ্রেডিং সিস্টেম (JSC/SSC)</h3>
+      <div style="border-radius:var(--radius-md);overflow:hidden;border:1px solid var(--grey-light);">
+        <table style="width:100%;border-collapse:collapse;font-family:'Hind Siliguri',sans-serif;font-size:14px;">
+          <thead>
+            <tr style="background:var(--green-dark);color:#fff;">
+              <th style="padding:12px 16px;text-align:left;">নম্বর</th>
+              <th style="padding:12px 16px;text-align:center;">গ্রেড</th>
+              <th style="padding:12px 16px;text-align:center;">জিপিএ</th>
+              <th style="padding:12px 16px;text-align:left;">মন্তব্য</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:#fff;"><td style="padding:10px 16px;">৮০–১০০</td><td style="padding:10px 16px;text-align:center;font-weight:700;color:var(--green-dark);">A+</td><td style="padding:10px 16px;text-align:center;font-weight:700;">৫.০০</td><td style="padding:10px 16px;">অসাধারণ</td></tr>
+            <tr style="background:#f8f8f8;"><td style="padding:10px 16px;">৭০–৭৯</td><td style="padding:10px 16px;text-align:center;font-weight:700;color:var(--green);">A</td><td style="padding:10px 16px;text-align:center;font-weight:700;">৪.০০</td><td style="padding:10px 16px;">উৎকৃষ্ট</td></tr>
+            <tr style="background:#fff;"><td style="padding:10px 16px;">৬০–৬৯</td><td style="padding:10px 16px;text-align:center;font-weight:700;color:#2196F3;">A-</td><td style="padding:10px 16px;text-align:center;font-weight:700;">৩.৫০</td><td style="padding:10px 16px;">অতি ভালো</td></tr>
+            <tr style="background:#f8f8f8;"><td style="padding:10px 16px;">৫০–৫৯</td><td style="padding:10px 16px;text-align:center;font-weight:700;color:#9C27B0;">B</td><td style="padding:10px 16px;text-align:center;font-weight:700;">৩.০০</td><td style="padding:10px 16px;">ভালো</td></tr>
+            <tr style="background:#fff;"><td style="padding:10px 16px;">৪০–৪৯</td><td style="padding:10px 16px;text-align:center;font-weight:700;color:#FF9800;">C</td><td style="padding:10px 16px;text-align:center;font-weight:700;">২.০০</td><td style="padding:10px 16px;">সন্তোষজনক</td></tr>
+            <tr style="background:#f8f8f8;"><td style="padding:10px 16px;">৩৩–৩৯</td><td style="padding:10px 16px;text-align:center;font-weight:700;color:#FF5722;">D</td><td style="padding:10px 16px;text-align:center;font-weight:700;">১.০০</td><td style="padding:10px 16px;">উত্তীর্ণ</td></tr>
+            <tr style="background:#fdeaed;"><td style="padding:10px 16px;">০–৩২</td><td style="padding:10px 16px;text-align:center;font-weight:700;color:var(--red);">F</td><td style="padding:10px 16px;text-align:center;font-weight:700;">০.০০</td><td style="padding:10px 16px;">অনুত্তীর্ণ</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+
+<style>
+.header.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.15); }
+</style>
+
+<script src="../asset/js/layout.js"></script>
+<script src="../asset/js/main.js"></script>
+</body>
+</html>
